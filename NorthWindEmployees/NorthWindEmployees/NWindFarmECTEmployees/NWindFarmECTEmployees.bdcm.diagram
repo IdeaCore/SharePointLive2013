@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<minimalLanguageDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="NWindFarmECTEmployees">
+  <modelRootMoniker Name="/NWindFarmECTEmployees" />
+  <nestedChildShapes>
+    <entityShape Id="8394e2bb-f1af-4f5c-af29-cd05cc471eba" absoluteBounds="2, 1.75, 1.5, 2.172587890625">
+      <entityMoniker name="NorthWindEmployees.NWindFarmECTEmployees.Employee" />
+      <nestedChildShapes>
+        <elementListCompartment Id="7c6ec043-9608-493b-9db2-802dec023c5b" absoluteBounds="2.015, 2.16, 1.4700000000000002, 0.44169108072916663" name="Identifiers" titleTextColor="Black" itemTextColor="Black" />
+        <elementListCompartment Id="89015353-e992-426e-858e-2474fe3bdb7f" absoluteBounds="2.015, 2.6116910807291669, 1.4700000000000002, 1.2108968098958333" name="Methods" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </entityShape>
+  </nestedChildShapes>
+</minimalLanguageDiagram>

@@ -1,0 +1,149 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Model xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.microsoft.com/windows/2007/BusinessDataCatalog" Name="NWindFarmECTEmployees">
+  <LobSystems>
+    <LobSystem Name="NWindFarmECTEmployees" Type="DotNetAssembly">
+      <LobSystemInstances>
+        <LobSystemInstance Name="NWindFarmECTEmployees" />
+      </LobSystemInstances>
+      <Entities>
+        <Entity Name="Employee" Namespace="NorthWindEmployees.NWindFarmECTEmployees" Version="1.0.0.71">
+          <Properties>
+            <Property Name="Class" Type="System.String">NorthWindEmployees.NWindFarmECTEmployees.EmployeeService, NWindFarmECTEmployees</Property>
+          </Properties>
+          <Identifiers>
+            <Identifier Name="EmployeeID" TypeName="System.Int32" />
+          </Identifiers>
+          <Methods>
+            <Method Name="ReadItem">
+              <Parameters>
+                <Parameter Name="employee" Direction="Return">
+                  <TypeDescriptor Name="Employee" TypeName="NorthWindEmployees.Employee, NWindFarmECTEmployees" IsCollection="false" PreUpdaterField="false">
+                    <TypeDescriptors>
+                      <TypeDescriptor Name="EmployeeID" TypeName="System.Int32" IsCollection="false" IdentifierName="EmployeeID" />
+                      <TypeDescriptor Name="LastName" TypeName="System.String" />
+                      <TypeDescriptor Name="FirstName" TypeName="System.String" />
+                      <TypeDescriptor Name="Title" TypeName="System.String" />
+                      <TypeDescriptor Name="TitleOfCourtesy" TypeName="System.String" />
+                      <TypeDescriptor Name="BirthDate" TypeName="System.DateTime" IsCollection="false" />
+                      <TypeDescriptor Name="HireDate" TypeName="System.DateTime" IsCollection="false" />
+                      <TypeDescriptor Name="Address" TypeName="System.String" />
+                      <TypeDescriptor Name="City" TypeName="System.String" />
+                      <TypeDescriptor Name="Region" TypeName="System.String" />
+                      <TypeDescriptor Name="PostalCode" TypeName="System.String" />
+                      <TypeDescriptor Name="Country" TypeName="System.String" />
+                      <TypeDescriptor Name="HomePhone" TypeName="System.String" />
+                      <TypeDescriptor Name="Extension" TypeName="System.String" />
+                      <TypeDescriptor Name="Notes" TypeName="System.String" /></TypeDescriptors></TypeDescriptor></Parameter>
+                <Parameter Name="employeeID" Direction="In">
+                  <TypeDescriptor Name="EmployeeID" TypeName="System.Int32" IdentifierEntityName="Employee" IdentifierEntityNamespace="NorthWindEmployees.NWindFarmECTEmployees" IdentifierName="EmployeeID" PreUpdaterField="false" /></Parameter>
+              </Parameters>
+              <MethodInstances>
+                <MethodInstance Name="ReadItem" Type="SpecificFinder" ReturnParameterName="employee" ReturnTypeDescriptorPath="Employee" />
+              </MethodInstances></Method>
+            <Method Name="ReadList">
+              <Parameters>
+                <Parameter Name="employeeList" Direction="Return">
+                  <TypeDescriptor Name="EmployeeList" TypeName="System.Collections.Generic.IEnumerable`1[[NorthWindEmployees.Employee, NWindFarmECTEmployees]]" IsCollection="true">
+                    <TypeDescriptors>
+                      <TypeDescriptor Name="Employee" IsCollection="false" TypeName="NorthWindEmployees.Employee, NWindFarmECTEmployees">
+                        <TypeDescriptors>
+                          <TypeDescriptor Name="EmployeeID" IdentifierName="EmployeeID" IsCollection="false" TypeName="System.Int32" />
+                          <TypeDescriptor Name="LastName" TypeName="System.String" />
+                          <TypeDescriptor Name="FirstName" TypeName="System.String" />
+                          <TypeDescriptor Name="Title" TypeName="System.String" />
+                          <TypeDescriptor Name="TitleOfCourtesy" TypeName="System.String" />
+                          <TypeDescriptor Name="BirthDate" IsCollection="false" TypeName="System.DateTime" />
+                          <TypeDescriptor Name="HireDate" IsCollection="false" TypeName="System.DateTime" />
+                          <TypeDescriptor Name="Address" TypeName="System.String" />
+                          <TypeDescriptor Name="City" TypeName="System.String" />
+                          <TypeDescriptor Name="Region" TypeName="System.String" />
+                          <TypeDescriptor Name="PostalCode" TypeName="System.String" />
+                          <TypeDescriptor Name="Country" TypeName="System.String" />
+                          <TypeDescriptor Name="HomePhone" TypeName="System.String" />
+                          <TypeDescriptor Name="Extension" TypeName="System.String" />
+                          <TypeDescriptor Name="Notes" TypeName="System.String" /></TypeDescriptors></TypeDescriptor></TypeDescriptors></TypeDescriptor></Parameter>
+              </Parameters>
+              <MethodInstances>
+                <MethodInstance Name="ReadList" Type="Finder" ReturnParameterName="employeeList" ReturnTypeDescriptorPath="EmployeeList" />
+              </MethodInstances></Method>
+            <Method Name="Create">
+              <Parameters>
+                <Parameter Name="returnEmployee" Direction="Return">
+                  <TypeDescriptor Name="ReturnEmployee" IsCollection="false" TypeName="NorthWindEmployees.Employee, NWindFarmECTEmployees">
+                    <TypeDescriptors>
+                      <TypeDescriptor Name="EmployeeID" IdentifierName="EmployeeID" IsCollection="false" TypeName="System.Int32" />
+                      <TypeDescriptor Name="LastName" TypeName="System.String" />
+                      <TypeDescriptor Name="FirstName" TypeName="System.String" />
+                      <TypeDescriptor Name="Title" TypeName="System.String" />
+                      <TypeDescriptor Name="TitleOfCourtesy" TypeName="System.String" />
+                      <TypeDescriptor Name="BirthDate" IsCollection="false" TypeName="System.DateTime" />
+                      <TypeDescriptor Name="HireDate" IsCollection="false" TypeName="System.DateTime" />
+                      <TypeDescriptor Name="Address" TypeName="System.String" />
+                      <TypeDescriptor Name="City" TypeName="System.String" />
+                      <TypeDescriptor Name="Region" TypeName="System.String" />
+                      <TypeDescriptor Name="PostalCode" TypeName="System.String" />
+                      <TypeDescriptor Name="Country" TypeName="System.String" />
+                      <TypeDescriptor Name="HomePhone" TypeName="System.String" />
+                      <TypeDescriptor Name="Extension" TypeName="System.String" />
+                      <TypeDescriptor Name="Notes" TypeName="System.String" /></TypeDescriptors></TypeDescriptor></Parameter>
+                <Parameter Name="newEmployee" Direction="In">
+                  <TypeDescriptor Name="NewEmployee" IsCollection="false" TypeName="NorthWindEmployees.Employee, NWindFarmECTEmployees">
+                    <TypeDescriptors>
+                      <TypeDescriptor Name="EmployeeID" IdentifierName="EmployeeID" IsCollection="false" TypeName="System.Int32" CreatorField="true" />
+                      <TypeDescriptor Name="LastName" TypeName="System.String" CreatorField="true" />
+                      <TypeDescriptor Name="FirstName" TypeName="System.String" CreatorField="true" />
+                      <TypeDescriptor Name="Title" TypeName="System.String" CreatorField="true" />
+                      <TypeDescriptor Name="TitleOfCourtesy" TypeName="System.String" CreatorField="true" />
+                      <TypeDescriptor Name="BirthDate" IsCollection="false" TypeName="System.DateTime" CreatorField="true" />
+                      <TypeDescriptor Name="HireDate" IsCollection="false" TypeName="System.DateTime" CreatorField="true" />
+                      <TypeDescriptor Name="Address" TypeName="System.String" CreatorField="true" />
+                      <TypeDescriptor Name="City" TypeName="System.String" CreatorField="true" />
+                      <TypeDescriptor Name="Region" TypeName="System.String" CreatorField="true" />
+                      <TypeDescriptor Name="PostalCode" TypeName="System.String" CreatorField="true" />
+                      <TypeDescriptor Name="Country" TypeName="System.String" CreatorField="true" />
+                      <TypeDescriptor Name="HomePhone" TypeName="System.String" CreatorField="true" />
+                      <TypeDescriptor Name="Extension" TypeName="System.String" CreatorField="true" />
+                      <TypeDescriptor Name="Notes" TypeName="System.String" CreatorField="true" /></TypeDescriptors></TypeDescriptor></Parameter>
+              </Parameters>
+              <MethodInstances>
+                <MethodInstance Name="Create" Type="Creator" ReturnParameterName="returnEmployee" ReturnTypeDescriptorPath="ReturnEmployee" />
+              </MethodInstances></Method>
+            <Method Name="Update">
+              <Parameters>
+                <Parameter Name="employee" Direction="In">
+                  <TypeDescriptor Name="Employee" IsCollection="false" TypeName="NorthWindEmployees.Employee, NWindFarmECTEmployees">
+                    <TypeDescriptors>
+                      <TypeDescriptor Name="EmployeeID" IdentifierName="EmployeeID" IsCollection="false" TypeName="System.Int32" UpdaterField="true" />
+                      <TypeDescriptor Name="LastName" TypeName="System.String" UpdaterField="true" />
+                      <TypeDescriptor Name="FirstName" TypeName="System.String" UpdaterField="true" />
+                      <TypeDescriptor Name="Title" TypeName="System.String" UpdaterField="true" />
+                      <TypeDescriptor Name="TitleOfCourtesy" TypeName="System.String" UpdaterField="true" />
+                      <TypeDescriptor Name="BirthDate" IsCollection="false" TypeName="System.DateTime" UpdaterField="true" />
+                      <TypeDescriptor Name="HireDate" IsCollection="false" TypeName="System.DateTime" UpdaterField="true" />
+                      <TypeDescriptor Name="Address" TypeName="System.String" UpdaterField="true" />
+                      <TypeDescriptor Name="City" TypeName="System.String" UpdaterField="true" />
+                      <TypeDescriptor Name="Region" TypeName="System.String" UpdaterField="true" />
+                      <TypeDescriptor Name="PostalCode" TypeName="System.String" UpdaterField="true" />
+                      <TypeDescriptor Name="Country" TypeName="System.String" UpdaterField="true" />
+                      <TypeDescriptor Name="HomePhone" TypeName="System.String" UpdaterField="true" />
+                      <TypeDescriptor Name="Extension" TypeName="System.String" UpdaterField="true" />
+                      <TypeDescriptor Name="Notes" TypeName="System.String" UpdaterField="true" /></TypeDescriptors></TypeDescriptor></Parameter>
+                <Parameter Name="parameter" Direction="In">
+                  <TypeDescriptor Name="EmployeeID" TypeName="System.Int32" IsCollection="false" IdentifierName="EmployeeID" PreUpdaterField="true" /></Parameter>
+              </Parameters>
+              <MethodInstances>
+                <MethodInstance Name="Update" Type="Updater" />
+              </MethodInstances></Method>
+            <Method Name="Delete">
+              <Parameters>
+                <Parameter Name="employeeID" Direction="In">
+                  <TypeDescriptor Name="EmployeeID" TypeName="System.Int32" IdentifierEntityName="Employee" IdentifierEntityNamespace="NorthWindEmployees.NWindFarmECTEmployees" IdentifierName="EmployeeID" /></Parameter>
+              </Parameters>
+              <MethodInstances>
+                <MethodInstance Name="Delete" Type="Deleter" />
+              </MethodInstances></Method>
+          </Methods></Entity>
+      </Entities>
+    </LobSystem>
+  </LobSystems>
+</Model>
